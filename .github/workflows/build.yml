@@ -11,7 +11,7 @@ jobs:
           distribution: 'temurin'
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.27.0'
+          channel: 'stable'
       - run: flutter pub get
       - run: flutter build apk --debug
       - uses: actions/upload-artifact@v4
